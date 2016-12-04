@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Omrails</title>
+    <title>Black Squirrel Guitar Works</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,10 +9,10 @@
   </head>
 
   <body>
-  	<%Link_to "home", root_path %>
-	<% Link_to "models" models_path %>
-	<% Link_to "about" about_path %>
-	<% Link_to "Contact us" contact_path %>
+  <%= link_to "Home", root_path %>
+    <%= link_to "About", about_path%>
+    <%= link_to "contact", contact_path%>
+    <%= link_to "models", models_path%>
     <%= yield %>
   </body>
 </html>
